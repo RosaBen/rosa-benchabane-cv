@@ -1,9 +1,7 @@
 export default function Experiences({experiences}){
 
-  console.log(experiences)
-
   const allexperiences = experiences.map((exp, i) => (
-    <div key={i}>
+          <div key={i} className="exp-block">
       <div className="exp-header">
         <span>{exp.title}</span>
         <span>{exp.date}</span>
@@ -17,11 +15,11 @@ export default function Experiences({experiences}){
         ))}
       </ul>
       <span>✦ {exp.kpi}</span>
-
+        <hr />
     </div>
   ))
 
-  
+
   return(
     <section className="experiences">
       <h2>Expériences professionnelles</h2>

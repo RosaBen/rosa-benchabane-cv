@@ -1,10 +1,11 @@
 import cvData from "./assets/scripts/data"
 import Header from "./components/Header"
 import Experiences from "./components/Experiences"
+import Formations from "./components/Formations"
 
 function App() {
 
-const {title, name, contact, summary, experiences} = cvData
+const {title, name, contact, summary, experiences, formations} = cvData
 
   return (
     <>
@@ -21,8 +22,14 @@ const {title, name, contact, summary, experiences} = cvData
     <section className="summary">
       <p><strong>Profil: </strong> {summary}</p>
     </section>
-    <div className="main">
+    <div className="main-column">
       <Experiences experiences = {experiences}/>
+      <aside className="right-column">
+        <div>
+          <h2>Formation</h2>
+          <Formations formations={formations}/>
+        </div>
+      </aside>
     </div>
 </main>
     </div>

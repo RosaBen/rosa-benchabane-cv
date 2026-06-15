@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+  padding: 1rem;
+}
+
 /* header */
 header {
   background-color: #1b2a4a;
@@ -39,9 +43,7 @@ header a {
   justify-content: center;
 }
 
-main {
-  padding: 1rem;
-}
+/* main summary*/
 
 .summary {
   background-color: #eff6ff;
@@ -58,6 +60,58 @@ main {
   padding-left: 0.25rem;
 }
 
+/* main 2 colums */
+
+.main-column {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+/* main experiences column1 */
+
+.experiences {
+  border-right: 1px solid #e5e7eb;
+  padding: 1.1rem 1.25rem 1.1rem 1.1rem;
+}
+
+.exp-block {
+  margin-bottom: 0.9rem;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start;
+  gap: 0.5rem; */
+  margin-bottom: 2px;
+}
+
+.tasks {
+  padding-left: 1.2rem;
+  margin: 0.7rem 0;
+}
+
+.exp-block span:nth-child(4) {
+  color: #1d4ed8;
+  display: inline-block;
+  background-color: #dbeafe;
+  font-size: 0.75rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* main aside column2 */
+
+.right-column {
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+  padding: 1rem 0.5rem;
+  background-color: rgba(219, 234, 254, 0.3);
+  border-radius: 0.5rem;
+}
 /* typos */
 
 h1 {
@@ -83,6 +137,53 @@ header p {
 .summary p {
   color: "#1e3a5f";
 }
+
+h2 {
+  margin-bottom: 1rem;
+  color: #1d4ed8;
+  font-size: 1.2rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #1d4ed8;
+}
+
+.exp-sub {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  letter-spacing: 1px;
+}
+
+.exp-header span:first-child {
+  color: #1b2a4a;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.exp-header span:nth-child(2) {
+  color: #6b7280;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.tasks li::marker {
+  color: #1d4ed8;
+}
+
+.tasks li {
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+h6 {
+  color: #1b2a4a;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.formation p {
+  font-size: 0.65rem;
+}
+
 /* @media print{
   
 } */

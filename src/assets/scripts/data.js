@@ -36,27 +36,25 @@ const cvData = {
       kpi: "Satisfaction client 5/5, Réponse rapide dans moins de 5mn, Suivi avec client toutes les 24h ",
     },
   ],
-  rightColumn: {
-    formations: [
-      {
-        formation: "Développeur Web et Web mobile",
-        date: "2026 – En cours",
-        school: "CEF- Centre Europeen de Formation",
-      },
-    ],
-    techSkills: [
-      { cat: "Front-End", items: "HTML, CSS, JavaScript, React, Bootstrap" },
-      { cat: "Base de données", items: "MySQL, Postgres" },
-      { cat: "Outils", items: "Git, Figma, VS Code, Jira" },
-    ],
-    softSkills: [
-      "Autonomie & proactivité",
-      "Travail en équipe",
-      "Adaptabilité",
-      "Curiosité intellectuelle",
-    ],
-    hobbies: ["Instructeur en freelance de Roller Skate", "sci-fi(Lecture, films, séries)", "Déplacement urbain en roller", "Windsurf intermédiaire, Kitesurf débutant"],
-  },
+  formations: [
+    {
+      formation: "Développeur Web et Web mobile",
+      date: "2026 – En cours",
+      school: "Centre Europeen de Formation(CEF)",
+    },
+  ],
+  techSkills: [
+    { cat: "Front-End", items: "HTML, CSS, JavaScript, React, Bootstrap" },
+    { cat: "Base de données", items: "MySQL, Postgres" },
+    { cat: "Outils", items: "Git, Figma, VS Code, Jira" },
+  ],
+  softSkills: [
+    "Autonomie & proactivité",
+    "Travail en équipe",
+    "Adaptabilité",
+    "Curiosité intellectuelle",
+  ],
+  hobbies: ["Instructeur en freelance de Roller Skate", "sci-fi(Lecture, films, séries)", "Déplacement urbain en roller", "Windsurf intermédiaire, Kitesurf débutant"],
 };
 
 export default cvData;
