@@ -1,120 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import cvData from "./assets/scripts/data"
+import Header from "./components/Header"
+import Experiences from "./components/Experiences"
+import Formations from "./components/Formations"
+import Techskills from "./components/Techskills"
+import Softskills from "./components/Softskills"
+import Hobbies from "./components/Hobbies"
+
+import "./assets/styles/header.css"
+import "./assets/styles/experiences.css"
+import "./assets/styles/aside.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+const {title, name, contact, summary, experiences, formations, techSkills, softSkills, hobbies} = cvData
+
+const handlePrint=()=> window.print()
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <button className="no-print" onClick={handlePrint}>🖨️ Imprimer / Exporter en PDF</button>
+    <div className="cv-page">
+    <Header 
+    title={title} 
+    name={name}
+    tel={contact.phone}
+    email={contact.email}
+    portfolio={contact.portfolio}
+    location={contact.city}
+    />
+<main>
+    <section className="summary">
+      <p><strong>Profil: </strong> {summary}</p>
+    </section>
+    <div className="main-column">
+      <Experiences experiences = {experiences}/>
+      <aside className="right-column">
+        <section className="aside-list">
+          <h2>Formation</h2>
+          <Formations formations={formations}/>
+        </section>
+        <section className="aside-list">
+          <h2>Compétences techniques</h2>
+          <Techskills skills={techSkills}/>
+        </section>
+        <section className="aside-list">
+          <h2>Savoir être</h2>
+          <Softskills skills={softSkills}/>
+        </section>
+        <section className="aside-list">
+          <h2>Centres d'intérêts</h2>
+          <Hobbies hobbies={hobbies}/>
+        </section>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      </aside>
+    </div>
+</main>
+    </div>
     </>
   )
 }
