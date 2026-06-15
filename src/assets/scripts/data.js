@@ -50,6 +50,7 @@ const cvData = {
   ],
   softSkills: [
     "Autonomie & proactivité",
+    "Résolution de problèmes",
     "Travail en équipe",
     "Adaptabilité",
     "Curiosité intellectuelle",

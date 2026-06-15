@@ -2,7 +2,8 @@ import cvData from "./assets/scripts/data"
 import Header from "./components/Header"
 import Experiences from "./components/Experiences"
 import Formations from "./components/Formations"
-import TechSkills from "./components/Techskills"
+import Techskills from "./components/Techskills"
+import Softskills from "./components/Softskills"
 
 import "./assets/styles/header.css"
 import "./assets/styles/experiences.css"
@@ -10,7 +11,7 @@ import "./assets/styles/aside.css"
 
 function App() {
 
-const {title, name, contact, summary, experiences, formations, techSkills} = cvData
+const {title, name, contact, summary, experiences, formations, techSkills, softSkills} = cvData
 
   return (
     <>
@@ -30,14 +31,19 @@ const {title, name, contact, summary, experiences, formations, techSkills} = cvD
     <div className="main-column">
       <Experiences experiences = {experiences}/>
       <aside className="right-column">
-        <div className="aside-list">
+        <section className="aside-list">
           <h2>Formation</h2>
           <Formations formations={formations}/>
-        </div>
-        <div className="aside-list">
+        </section>
+        <section className="aside-list">
           <h2>Compétences techniques</h2>
-          <TechSkills skills={techSkills}/>
-        </div>
+          <Techskills skills={techSkills}/>
+        </section>
+        <section className="aside-list">
+          <h2>Savoir être</h2>
+          <Softskills skills={softSkills}/>
+        </section>
+
       </aside>
     </div>
 </main>
