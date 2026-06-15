@@ -1,0 +1,25 @@
+/* Layouts */
+
+.aside-list {
+  margin-bottom: 1rem;
+}
+/* Typos */
+
+h6 {
+  color: #1b2a4a;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.formation p {
+  font-size: 0.65rem;
+}
+
+.tech p {
+  font-size: 0.65rem;
+  margin-bottom: 0.4rem;
+}
+
+.tech strong {
+  font-size: 0.7rem;
+}
