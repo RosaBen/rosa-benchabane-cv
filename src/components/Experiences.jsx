@@ -14,7 +14,7 @@ export default function Experiences({experiences}){
           <li key={j}>{task}</li>
         ))}
       </ul>
-      <span>✦ {exp.kpi}</span>
+      <span style={{backgroundColor: exp.kpi === ""? "white": "#dbeafe"}}>{exp.kpi}</span>
         <hr />
     </div>
   ))

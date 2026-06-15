@@ -4,6 +4,7 @@ import Experiences from "./components/Experiences"
 import Formations from "./components/Formations"
 import Techskills from "./components/Techskills"
 import Softskills from "./components/Softskills"
+import Hobbies from "./components/Hobbies"
 
 import "./assets/styles/header.css"
 import "./assets/styles/experiences.css"
@@ -11,10 +12,13 @@ import "./assets/styles/aside.css"
 
 function App() {
 
-const {title, name, contact, summary, experiences, formations, techSkills, softSkills} = cvData
+const {title, name, contact, summary, experiences, formations, techSkills, softSkills, hobbies} = cvData
+
+const handlePrint=()=> window.print()
 
   return (
     <>
+    <button className="no-print" onClick={handlePrint}>🖨️ Imprimer / Exporter en PDF</button>
     <div className="cv-page">
     <Header 
     title={title} 
@@ -42,6 +46,10 @@ const {title, name, contact, summary, experiences, formations, techSkills, softS
         <section className="aside-list">
           <h2>Savoir être</h2>
           <Softskills skills={softSkills}/>
+        </section>
+        <section className="aside-list">
+          <h2>Centres d'intérêts</h2>
+          <Hobbies hobbies={hobbies}/>
         </section>
 
       </aside>
