@@ -4,7 +4,7 @@ const cvData = {
   contact: {
     phone: "06 42 22 85 82",
     email: "benchabane.rosa@outlook.com",
-    portfolio: "rb-portfolio",
+    portfolio: "https://rosabenchabaneportfolio.netlify.app/",
     city: "Stains, Île-de-France",
   },
   summary:
