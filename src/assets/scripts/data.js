@@ -3,7 +3,7 @@ const cvData = {
   name: "Rosa Benchabane",
   contact: {
     phone: "06 42 22 85 82",
-    email: "benchabane.rosa@outlook.com",
+    email: "benchabane.rosa@protonmail.com",
     portfolio: "https://rosabenchabaneportfolio.netlify.app/",
     city: "Stains, Île-de-France",
   },
