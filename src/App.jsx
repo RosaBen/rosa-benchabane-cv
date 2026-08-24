@@ -9,6 +9,7 @@ import Hobbies from "./components/Hobbies";
 import "./assets/styles/header.css";
 import "./assets/styles/experiences.css";
 import "./assets/styles/aside.css";
+import "./assets/styles/responsive.css";
 
 function App() {
   const {
