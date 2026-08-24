@@ -19,7 +19,7 @@ body {
 .cv-page {
   background-color: white;
   width: 100%;
-  max-width: 794px;
+  max-width: 375px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ main {
 
 .main-column {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 1fr;
 }
 
 /* print button */
@@ -98,9 +98,25 @@ h2 {
   .no-print {
     display: none !important;
   }
-  body {
+
+  @page {
+    size: A4;
     margin: 0;
-    padding: 0;
-    background-color: white;
+  }
+  .cv-page {
+    width: 794px;
+    min-width: 794px;
+    max-width: 794px;
+  }
+
+  .main-column {
+    grid-template-columns: 65% 35%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row !important;
+    gap: 4rem;
+    font-size: 0.75rem;
+    justify-content: center;
   }
 }
