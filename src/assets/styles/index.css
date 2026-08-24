@@ -115,8 +115,10 @@ h2 {
   .contact {
     display: flex;
     flex-direction: row !important;
-    gap: 4rem;
     font-size: 0.75rem;
     justify-content: center;
+  }
+  body {
+    background: white;
   }
 }
