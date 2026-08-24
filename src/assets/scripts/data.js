@@ -9,6 +9,10 @@ const cvData = {
   },
   summary:
     "Développeuse web passionnée, rigoureuse et créative, je conçois des interfaces modernes et des expériences utilisateur soignées. Curieuse et autonome, j'apprends vite et m'intègre facilement dans une équipe. J'aime beaucoup investiguer quand je dois résoudre des problèmes et ça me permet d'apprendre de nouvelles choses. Je suis en ce moment,  à la recherche d'une alternance pour mettre mes compétences en pratique et continuer à grandir dans un environnement stimulant.",
+  availability: {
+    frequence: "2-3 jours/ semaine",
+    duration: "entre 2 et 4 mois"
+  },
   experiences: [
     {
       date: "Sep. 2019 – Mai 2023",
